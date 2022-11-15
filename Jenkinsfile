@@ -17,6 +17,12 @@ pipeline {
 				always {
 					junit 'target/surefire-reports/*.xml'
 				}
+				success {
+					sh 'echo "This is a success block"'
+				}
+				Failure {
+					sh 'echo "build failed"'
+				}
 			}
 		}
 	}
