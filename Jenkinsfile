@@ -20,7 +20,7 @@ pipeline {
 				success {
 					sh 'echo "This is a success block"'
 				}
-				Failure {
+				failure {
 					sh 'echo "build failed"'
 				}
 			}
