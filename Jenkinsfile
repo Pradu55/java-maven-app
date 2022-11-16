@@ -1,6 +1,6 @@
 pipeline {
 	agent {
-		label 'slavemaster'
+		label 'Slavemaster'
 	}
 	
 	tools {
